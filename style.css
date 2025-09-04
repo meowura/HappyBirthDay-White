@@ -1,4 +1,4 @@
-/* =================== Base =================== */
+/* =================== Base lg =================== */
 body,
 html {
     margin: 0;
@@ -67,7 +67,6 @@ html {
     margin-bottom: 20px;
     font-weight: 500;
     color: #e7a7c7;
-    /* เปลี่ยนสีตรงนี้เป็นสีที่ชอบ */
     text-align: center;
 }
 
@@ -80,11 +79,9 @@ html {
     margin-bottom: 20px;
 }
 
-/* ปรับ padding ของ input ให้มีระยะขอบด้านใน */
 .input-group input {
     width: 100%;
     padding: 12px 16px;
-    /* เพิ่ม padding ด้านซ้าย/ขวา */
     border-radius: 8px;
     border: 1px solid #ccc;
     outline: none;
@@ -92,11 +89,9 @@ html {
     box-sizing: border-box;
 }
 
-/* ปรับ label ให้ไม่ชิดขอบเกินไป */
 .input-group label {
     position: absolute;
     left: 16px;
-    /* เพิ่มระยะจากซ้าย */
     top: 50%;
     transform: translateY(-50%);
     color: #888;
@@ -105,7 +100,6 @@ html {
     transition: 0.3s ease;
 }
 
-/* เมื่อโฟกัสหรือมีค่า label จะเลื่อนขึ้น */
 .input-group input:focus+label,
 .input-group input:not(:placeholder-shown)+label {
     top: -8px;
@@ -164,7 +158,6 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 10px 5vw;
-    /* Use vw for responsive padding */
     z-index: 999;
     box-sizing: border-box;
 }
@@ -178,13 +171,11 @@ html {
 .navbar .menu {
     display: flex;
     gap: 12px;
-    /* Smaller gap so all items fit */
     list-style: none;
     margin: 0;
     padding: 0;
     flex-wrap: nowrap;
     overflow: visible;
-    /* No scroll bar */
 }
 
 .navbar .menu li a {
@@ -192,7 +183,6 @@ html {
     text-decoration: none;
     font-weight: 500;
     padding: 8px 16px;
-    /* Reasonable padding */
     border-radius: 12px;
     transition: 0.2s;
     background: transparent;
@@ -299,7 +289,6 @@ html {
     display: block;
 }
 
-/* Beautiful carousel buttons */
 .prev,
 .next {
     background: linear-gradient(135deg, #ff99bb 60%, #ff4d6d 100%);
@@ -503,7 +492,6 @@ html {
     z-index: 999;
 }
 
-/* Responsive adjustments */
 @media (max-width: 900px) {
     .carousel-track {
         width: 100%;
@@ -521,7 +509,7 @@ html {
     }
 }
 
-/* Responsive adjustments for mobile */
+/* mobile */
 @media (max-width: 700px) {
     body {
         font-size: 1rem;
@@ -551,11 +539,8 @@ html {
     @media (max-width: 700px) {
         .home-pic {
             flex-direction: column;
-            /* วางจากบนลงล่าง */
             align-items: center;
-            /* จัดทั้ง container ให้ตรงกลาง */
             text-align: center;
-            /* ข้อความอยู่ตรงกลาง */
             padding: 180px 0;
             gap: 16px;
         }
@@ -567,16 +552,13 @@ html {
 
         .birthday-right {
             width: 100%;
-            /* ให้ container กว้างเต็ม */
             display: flex;
             justify-content: center;
-            /* จัดรูปภาพกลาง container */
             margin: 0 auto;
         }
 
         .birthday-right .birthday-img {
             width: 80vw;
-            /* ขนาดรูปพอดีกับหน้าจอ */
             max-width: 320px;
             border-radius: 18px;
             display: block;
@@ -593,18 +575,14 @@ html {
     .carousel-track {
         width: 100vw;
         height: 200px;
-        /* Increased height for bigger images */
         gap: 12px;
-        /* Slightly bigger gap */
         border-radius: 12px;
         padding: 0 2vw;
     }
 
     .carousel-item {
         min-width: 45vw;
-        /* Bigger width for each image */
         height: 180px;
-        /* Bigger height for each image */
         border-radius: 12px;
     }
 
@@ -688,5 +666,4 @@ html {
         font-size: 0.98rem;
         margin-top: 14px;
     }
-
 }
