@@ -88,14 +88,7 @@ nextBtn.addEventListener('click', () => {
 
 // =================== MUSIC CONTROL ===================
 const musicList = [
-  "song1.mp3",
-  "song2.mp3",
-  "song3.mp3",
-  "song4.mp3",
-  "song5.mp3",
-  "song6.mp3",
-  "song7.mp3",
-  "song8.mp3"
+   "song5.mp3"
 ];
 
 const bgMusic = document.getElementById("bg-music");
@@ -131,5 +124,6 @@ bgMusic.addEventListener("pause", () => {
 bgMusic.addEventListener("play", () => {
   toggleMusic.textContent = "Pause Music";
 });
+
 
 
