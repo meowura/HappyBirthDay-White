@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday White</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =================== LOGIN PAGE =================== -->
+  <div id="login-page">
+    <div class="title">🎂🎉 HAPPY BIRTHDAY WHITE 🎉🎂</div>
+
+    <div class="login-box">
+      <h2>Please enter the password</h2>
+      <div class="input-group">
+        <input type="password" id="password" placeholder=" " required>
+        <label for="password">Password</label>
+      </div>
+      <div class="hint">Hint: White Birthday is the password</div>
+      <button onclick="checkPassword()">Login</button>
+      <div id="error" class="error"></div>
+    </div>
+  </div>
+
+  <div id="main-page">
+    <button id="music-toggle">Play Music</button>
+
+    <!-- =================== NAVBAR =================== -->
+    <nav class="navbar">
+      <div class="logo">HBD WHITE</div>
+      <ul class="menu">
+        <li><a href="#home-pic">Home</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#coupon">Coupon</a></li>
+        <li><a href="#gift">Gift</a></li>
+      </ul>
+    </nav>
+
+    <!-- =================== BACKGROUND =================== -->
+    <section id="home-pic" class="home-pic">
+      <div class="birthday-left">
+        <h1>HAPPY BIRTHDAY
+          WHITE</h1>
+      </div>
+      <div class="birthday-right">
+        <img src="white/white14.jpg" alt="White" class="birthday-img">
+      </div>
+    </section>
+
+    <!-- =================== GALLERY =================== -->
+    <section id="gallery" class="gallery">
+      <h2>Gallery</h2>
+      <div class="carousel">
+        <button class="prev">&lt;</button>
+        <div class="carousel-track"></div>
+        <button class="next">&gt;</button>
+      </div>
+    </section>
+
+    <!-- =================== COUPON =================== -->
+    <section id="coupon" class="coupon">
+      <h2>COUPON</h2>
+         <div class="coupon-valid">Valid for White only</div>
+      <div class="coupon-grid">
+        <div class="coupon-box">
+          <div class="coupon-title">Buy me a snack/drink</div>
+          <div class="coupon-desc">– Redeem for 1 treat of your choice.</div>
+          <div class="coupon-expiry">Expires in September</div>
+        </div>
+        <div class="coupon-box">
+          <div class="coupon-title">Play a game together for 30 minutes</div>
+          <div class="coupon-desc">– Fun gaming time!</div>
+          <div class="coupon-expiry">Expires in September</div>
+        </div>
+        <div class="coupon-box">
+          <div class="coupon-title">Get 1 thing of your choice</div>
+          <div class="coupon-desc">– You pick, I do!</div>
+          <div class="coupon-expiry">Expires in September</div>
+        </div>
+        <div class="coupon-box">
+          <div class="coupon-title">Share a favorite song</div>
+          <div class="coupon-desc">– Exchange music or listen together.</div>
+          <div class="coupon-expiry">Expires in September</div>
+        </div>
+        <div class="coupon-box">
+          <div class="coupon-title">Take a fun photo together</div>
+          <div class="coupon-desc">– Silly or cute, keep it as a memory.</div>
+          <div class="coupon-expiry">Expires in September</div>
+        </div>
+        <div class="coupon-box">
+          <div class="coupon-title">Choose 1 activity for us to do together</div>
+          <div class="coupon-desc">– Watch YouTube, draw, walk, etc.</div>
+          <div class="coupon-expiry">Expires in September</div>
+        </div>
+      </div>
+  
+    </section>
+
+    <!-- =================== GIFT =================== -->
+    <section id="gift" class="gift-section">
+      <h2 class="gift-title">Gift</h2>
+      <div class="gift-box">
+        <div class="gift-inner">???</div>
+        <div class="gift-soon">Soon</div>
+      </div>
+    </section>
+
+    <!-- =================== MUSIC CONTROL =================== -->
+    <audio id="bg-music" loop></audio>
+
+    <div class="birthday-message-box">
+      <div class="birthday-message-title">Dear White,</div>
+      <div class="birthday-message-body">
+        I hope you always wake up with a smile on your face and end your day feeling proud of yourself. May every step you take bring you closer to your dreams, and may challenges only make you stronger. Always remember that you are capable, valued, and loved more than you know. I wish you endless happiness, laughter that fills your heart, and moments that make life truly special. Keep shining your light, stay curious, and never be afraid to chase the things that make you excited.
+        <br><br>
+        <span class="birthday-message-sign">With all my best wishes,<br>Safety</span>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
