@@ -100,10 +100,8 @@ function playRandomMusic() {
   bgMusic.play();
 }
 
-// Play random song on load
 playRandomMusic();
 
-// Play next random song when ended
 bgMusic.addEventListener("ended", playRandomMusic);
 
 // Play/pause toggle
@@ -117,13 +115,13 @@ toggleMusic.addEventListener("click", () => {
   }
 });
 
-// Update button text when paused/played by other means
 bgMusic.addEventListener("pause", () => {
   toggleMusic.textContent = "Play Music";
 });
 bgMusic.addEventListener("play", () => {
   toggleMusic.textContent = "Pause Music";
 });
+
 
 
 
