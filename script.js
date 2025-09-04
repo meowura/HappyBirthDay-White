@@ -43,17 +43,17 @@ document.querySelectorAll('.navbar .menu a').forEach(link => {
 
 // =================== GALLERY CAROUSEL (NO SLIDE, JUST SWITCH) ===================
 const galleryItems = [
-  "white/white1.jpg",
-  "white/white2.jpg",
-  "white/white3.jpg",
-  "white/white4.jpg",
-  "white/white5.jpg",
-  "white/white6.jpg",
-  "white/white7.jpg",
-  "white/white8.jpg",
-  "white/white9.jpg",
-  "white/white10.jpg",
-  "white/white11.jpg"
+  "white1.jpg",
+  "white2.jpg",
+  "white3.jpg",
+  "white4.jpg",
+  "white5.jpg",
+  "white6.jpg",
+  "white7.jpg",
+  "white8.jpg",
+  "white9.jpg",
+  "white10.jpg",
+  "white11.jpg"
 ];
 
 let currentIndex = 0;
@@ -124,6 +124,7 @@ bgMusic.addEventListener("pause", () => {
 bgMusic.addEventListener("play", () => {
   toggleMusic.textContent = "Pause Music";
 });
+
 
 
 
